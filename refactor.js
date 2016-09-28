@@ -236,6 +236,20 @@ var decreaseScore = function() {
 
 // Put your answer below -------------------------
 
+var game = function(){
+   var score = 0;
+
+   var increaseScore = function() {
+     score++;
+   };
+
+   var decreaseScore = function() {
+     score--;
+   };
+
+   increaseScore();
+   console.log('Score:', score);
+};
 
 // -----------------------------------------------
 
