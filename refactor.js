@@ -196,11 +196,13 @@ foo = "bar";
 // function.
 
 var callTenTimes = function(callback) {
-  var range = _.range(10);
-  _.each(range, callback);
+  for(var i = 0; i < 10; i++){
+    callback();
+  }
 };
 
 // Put your answer below -------------------------
+
 
 
 // -----------------------------------------------
