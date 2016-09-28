@@ -301,6 +301,15 @@ var accelerate = function(amount) {
 
 // Put your answer below -------------------------
 
+   var speed = 0;
+   var accelerate = function(amount) {
+      if(amount === undefined)
+         amount = 1;
+     speed += amount;
+     // console.log('speed:', speed);
+   };
+   accelerate();
+   accelerate(5);
 
 // -----------------------------------------------
 
