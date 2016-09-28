@@ -86,8 +86,11 @@ letter = "z";
 console.log("The letter is", letter);
 
 // Put your answer below -------------------------
-
-
+//   [c]: z then y
+//
+//   the anonymous function called in setTimeout
+//   is delayed – before it letter is set to 'z'
+//   and logged
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
