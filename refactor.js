@@ -31,7 +31,7 @@ function doSomethingCool() {
 
    var doSomethingCool = function() {
      console.log("Something Cool!");
-   }
+  };
 
 // -----------------------------------------------
 
@@ -352,8 +352,14 @@ var callLater = function(timeout, callback) {
 };
 
 // Put your answer below -------------------------
+var callLater = function(timeout, callback) {
+   if(callback === undefined)
+      setTimeout(timeout, 3000); //default timeout
+   else  setTimeout(callback, timeout);
+};
 
-
+callLater(doSomethingCool);
+callLater(10000, sayHi);
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
