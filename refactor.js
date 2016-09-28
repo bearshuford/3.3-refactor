@@ -203,7 +203,11 @@ var callTenTimes = function(callback) {
 
 // Put your answer below -------------------------
 
-
+   var callTenTimes = function(callback, n) {
+     for(var i = 0; i < n; i++){
+       callback();
+     }
+   };
 
 // -----------------------------------------------
 
